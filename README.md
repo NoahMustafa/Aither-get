@@ -479,6 +479,7 @@ If you find it useful and would like to support its development, optional donati
 
 - 🏦 **InstaPay**  
   https://ipn.eg/S/noahmustafa8/instapay/6RJe2t
+  Bank transfers may take longer to process depending on the sender’s bank.
 
 
 ---
@@ -537,6 +538,7 @@ Built with modern technology for maximum performance and reliability.
 Made with ❤️ for fast downloads
 
 </div>
+
 
 
 
