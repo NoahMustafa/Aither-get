@@ -9,6 +9,7 @@
 [![Downloads](https://img.shields.io/github/downloads/NoahMustafa/aither-get/total?style=for-the-badge)](https://github.com/NoahMustafa/aither-get/releases)
 [![Latest Release](https://img.shields.io/github/v/release/NoahMustafa/aither-get?style=for-the-badge)](https://github.com/NoahMustafa/aither-get/releases/latest)
 [![Stars](https://img.shields.io/github/stars/NoahMustafa/aither-get?style=for-the-badge)](https://github.com/NoahMustafa/aither-get/stargazers)
+[![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/Noah_mustafa_stuff)
 
 **[Download Latest Release](https://github.com/NoahMustafa/aither-get/releases/latest)** • **[Documentation](#-quick-start)** • **[Report Bug](https://github.com/NoahMustafa/aither-get/issues)**
 
@@ -463,6 +464,23 @@ Your feedback helps make Aither-get better:
 - ⭐ **Star the project** if you find it useful!
 - 💬 **Share your experience** - Help others discover Aither-get
 
+## ❤️ Donations (Optional)
+
+Aither-get is a free, personal project with no ads and no paid features.  
+If you find it useful and would like to support its development, optional donations are welcome.
+
+> Donations do not unlock features or affect functionality in any way.
+
+### 🌍 Global
+- ☕ **Ko-fi**  
+  https://ko-fi.com/Noah_mustafa_stuff
+
+### 🇪🇬 Local (Egypt only)
+
+- 🏦 **InstaPay**  
+  https://ipn.eg/S/noahmustafa8/instapay/6RJe2t
+
+
 ---
 
 ## 📄 License
@@ -519,4 +537,5 @@ Built with modern technology for maximum performance and reliability.
 Made with ❤️ for fast downloads
 
 </div>
+
 
