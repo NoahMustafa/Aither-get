@@ -259,6 +259,66 @@ aither-get --minimal https://example.com/file.zip
 | 10 MB/s | 10485760 | `--limit 10485760` |
 | 50 MB/s | 52428800 | `--limit 52428800` |
 
+### 🔗 Metalink Support
+
+Aither-get now supports **automatic mirror discovery** via Metalink files - just like aria2!
+
+**What is Metalink?**
+Metalink is a standard format that provides multiple download mirrors for a single file. When a server provides metalink information, Aither-get automatically:
+- Discovers all available mirrors
+- Tests them in parallel
+- Selects the fastest one
+- Falls back to alternatives if needed
+
+**How to use:**
+
+```bash
+# Preview available mirrors before downloading
+aither-get --info https://example.com/file.iso
+
+# Download automatically uses the fastest mirror
+aither-get https://example.com/file.meta4
+
+# Works with URLs that provide metalink via HTTP headers too!
+aither-get https://releases.ubuntu.com/22.04/ubuntu-22.04-desktop-amd64.iso
+```
+
+**Info mode shows mirrors:**
+```
+🔗 METALINK MIRRORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mirrors Found:    5
+Mirror List:
+  1. https://mirror1.example.com/file.iso (priority: 100) [US]
+  2. https://mirror2.example.com/file.iso (priority: 90) [EU]
+  3. https://mirror3.example.com/file.iso (priority: 80) [AS]
+
+💡 Tip: The download will automatically use the fastest mirror
+```
+
+**JSON output includes mirrors:**
+```bash
+aither-get --info https://example.com/file.meta4 --json
+```
+
+```json
+{
+  "metalink_detected": true,
+  "metalink_mirrors": [
+    {"url": "https://mirror1.example.com/file.iso", "priority": 100, "location": "us"},
+    {"url": "https://mirror2.example.com/file.iso", "priority": 90, "location": "eu"}
+  ]
+}
+```
+
+**Features:**
+- ✅ Automatic detection (no configuration needed)
+- ✅ Supports Metalink 3.0 and 4.0 formats
+- ✅ HTTP Link header detection
+- ✅ Priority-based mirror selection
+- ✅ <30ms overhead
+- ✅ Graceful fallback if metalink unavailable
+
 ---
 
 ## 🎨 Advanced Features
@@ -538,6 +598,7 @@ Built with modern technology for maximum performance and reliability.
 Made with ❤️ for fast downloads
 
 </div>
+
 
 
 
